@@ -1,0 +1,42 @@
+style {
+    --valueColor: #569CD6;
+    --methodColor: #DCDCAA;
+    --enumColor: #B8D7A3;
+    --classColor: #4EC9B0;
+    --structColor: #86C691;
+}
+
+value::before {
+    color: var(--valueColor);
+    content: attr(v);
+}
+
+method::before {
+    color: var(--methodColor);
+    content: attr(m);
+}
+
+enum::before {
+    color: var(--enumColor);
+    content: attr(e);
+}
+
+class::before {
+    color: var(--classColor);
+    content: attr(c);
+}
+
+type::before {
+    color: var(--textColor);
+    content: "<";
+}
+
+type::after {
+    color: var(--textColor);
+    content: ">";
+}
+
+struct::after {
+    color: var(--structColor);
+    content: attr(s);
+}

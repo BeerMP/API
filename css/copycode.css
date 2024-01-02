@@ -1,0 +1,46 @@
+.copy-code-button {
+    cursor: pointer;
+    background: unset;
+    border: 0;
+    font-size: 1em;
+    overflow: visible;
+    padding: 0.4em 0.4em;
+    position: absolute;
+    right: 0.1em;
+    top: 0.15em;
+    z-index: 1;
+}
+
+.copy-code-button:hover {
+    color: var(--textColor);
+    background: color-mix(in srgb, currentColor 20%, transparent);
+    border-radius: inherit;
+}
+
+.copy-code-button.cc-success {
+    color: rgb(120, 210, 120);
+    background: color-mix(in srgb, currentColor 20%, transparent);
+    border-radius: inherit;
+}
+
+.copy-code-button > svg {
+    pointer-events: none;
+}
+
+.cc-copyicon {
+    display: block !important;
+    fill: var(--textColor);
+}
+
+.cc-successicon {
+    display: none !important;
+    fill: rgb(120, 210, 120);
+}
+
+.cc-success > .cc-copyicon {
+    display: none !important;
+}
+
+.cc-success > .cc-successicon {
+    display: block !important;
+}

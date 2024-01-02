@@ -1,0 +1,27 @@
+.markdown-section table {
+	border-collapse: collapse;
+	border-spacing: 0;
+	display: block;
+	margin-bottom: 1rem;
+	overflow: auto;
+	width: 100%
+}
+
+.markdown-section th {
+	font-weight: 700
+}
+
+.markdown-section td,
+.markdown-section th {
+	border: 1px solid #b4b4b4;
+	padding: 6px 13px
+}
+
+.markdown-section tr {
+    background-color: var(--backgroundColor);
+	border-top: 1px solid #b4b4b4;
+}
+
+.markdown-section tbody tr:nth-child(2n-1) {
+	background-color: var(--codeBackgroundColor);
+}
